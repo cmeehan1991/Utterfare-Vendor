@@ -1,0 +1,17 @@
+PODS:
+  - KYDrawerController (2.0.4)
+  - SDWebImage (4.3.2):
+    - SDWebImage/Core (= 4.3.2)
+  - SDWebImage/Core (4.3.2)
+
+DEPENDENCIES:
+  - KYDrawerController
+  - SDWebImage (~> 4.0)
+
+SPEC CHECKSUMS:
+  KYDrawerController: cf5839877c442132123e9d482f458821026defdf
+  SDWebImage: 29bd3c0bc1f01e5eb59720847c64ad4c4ca1af5d
+
+PODFILE CHECKSUM: d8d3349af80bb4b817788a766acbf0c333f43c2e
+
+COCOAPODS: 1.4.0

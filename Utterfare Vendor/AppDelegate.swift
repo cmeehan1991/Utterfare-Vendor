@@ -6,16 +6,28 @@
 //  Copyright © 2018 CBM Web Development. All rights reserved.
 //
 
+import Foundation
 import UIKit
+import KYDrawerController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    let defaults = UserDefaults.standard
+    var loggedIn: Bool = Bool()
+    var userId: String = String()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        loggedIn = defaults.bool(forKey: "IS_LOGGED_IN")
+        let storyboard = UIStoryboard(name:"Main", bundle: nil)
+        
+        if !loggedIn {
+            let vc = storyboard.instantiateViewController(withIdentifier: "LogInViewController") as! LogInViewController
+            self.window?.rootViewController = vc
+            self.window?.makeKeyAndVisible()
+        }
         return true
     }
 
