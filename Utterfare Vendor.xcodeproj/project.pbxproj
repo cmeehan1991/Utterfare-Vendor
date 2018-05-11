@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		9F1F05A2C9F9A6C14CF67FB4 /* Pods_Utterfare_Vendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D886EAB4829A50D06053FF1C /* Pods_Utterfare_Vendor.framework */; };
 		A20F8755206B2EDB00F20F2B /* SingleItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20F8754206B2EDB00F20F2B /* SingleItemViewController.swift */; };
+		A217ACA1209223280005023F /* RecoverUsernameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A217ACA0209223280005023F /* RecoverUsernameController.swift */; };
+		A217ACA5209223860005023F /* RecoverPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A217ACA4209223860005023F /* RecoverPasswordController.swift */; };
+		A217ACA7209223980005023F /* PasswordResetCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A217ACA6209223980005023F /* PasswordResetCodeController.swift */; };
+		A217ACA9209223F50005023F /* UpdatePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A217ACA8209223F50005023F /* UpdatePasswordController.swift */; };
+		A217ACAC209224340005023F /* CustomAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A217ACAB209224340005023F /* CustomAlerts.swift */; };
 		A23043C6206AA6E200C8A618 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23043C5206AA6E200C8A618 /* LogInViewController.swift */; };
 		A23043C9206AA80400C8A618 /* LogInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23043C8206AA80400C8A618 /* LogInModel.swift */; };
 		A23043CC206AE52400C8A618 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23043CB206AE52400C8A618 /* ItemsViewController.swift */; };
@@ -25,6 +30,11 @@
 		45D0AD7B33DF6EFBC93B723A /* Pods-Utterfare Vendor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Utterfare Vendor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Utterfare Vendor/Pods-Utterfare Vendor.debug.xcconfig"; sourceTree = "<group>"; };
 		76FC7DBDD0D478B83F2364B8 /* Pods-Utterfare Vendor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Utterfare Vendor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Utterfare Vendor/Pods-Utterfare Vendor.release.xcconfig"; sourceTree = "<group>"; };
 		A20F8754206B2EDB00F20F2B /* SingleItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleItemViewController.swift; sourceTree = "<group>"; };
+		A217ACA0209223280005023F /* RecoverUsernameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverUsernameController.swift; sourceTree = "<group>"; };
+		A217ACA4209223860005023F /* RecoverPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordController.swift; sourceTree = "<group>"; };
+		A217ACA6209223980005023F /* PasswordResetCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetCodeController.swift; sourceTree = "<group>"; };
+		A217ACA8209223F50005023F /* UpdatePasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordController.swift; sourceTree = "<group>"; };
+		A217ACAB209224340005023F /* CustomAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlerts.swift; sourceTree = "<group>"; };
 		A23043C5206AA6E200C8A618 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		A23043C8206AA80400C8A618 /* LogInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInModel.swift; sourceTree = "<group>"; };
 		A23043CB206AE52400C8A618 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
@@ -60,11 +70,80 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A23043C7206AA7EF00C8A618 /* Log In */ = {
+		A217AC9F209222FD0005023F /* Account Recovery */ = {
+			isa = PBXGroup;
+			children = (
+				A217ACA32092234B0005023F /* Model */,
+				A217ACA2209223460005023F /* Controller */,
+			);
+			path = "Account Recovery";
+			sourceTree = "<group>";
+		};
+		A217ACA2209223460005023F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A217ACA0209223280005023F /* RecoverUsernameController.swift */,
+				A217ACA4209223860005023F /* RecoverPasswordController.swift */,
+				A217ACA6209223980005023F /* PasswordResetCodeController.swift */,
+				A217ACA8209223F50005023F /* UpdatePasswordController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A217ACA32092234B0005023F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A217ACAA209224250005023F /* Custom Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				A217ACAB209224340005023F /* CustomAlerts.swift */,
+			);
+			path = "Custom Alerts";
+			sourceTree = "<group>";
+		};
+		A217ACAD209227130005023F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A23043C8206AA80400C8A618 /* LogInModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A217ACAE209227180005023F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				A23043C5206AA6E200C8A618 /* LogInViewController.swift */,
-				A23043C8206AA80400C8A618 /* LogInModel.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A217ACAF209227210005023F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A23043CD206AE57F00C8A618 /* ItemsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A217ACB0209227250005023F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A23043CB206AE52400C8A618 /* ItemsViewController.swift */,
+				A23043CF206AE76600C8A618 /* ItemCellController.swift */,
+				A20F8754206B2EDB00F20F2B /* SingleItemViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A23043C7206AA7EF00C8A618 /* Log In */ = {
+			isa = PBXGroup;
+			children = (
+				A217ACAE209227180005023F /* Controller */,
+				A217ACAD209227130005023F /* Model */,
 			);
 			path = "Log In";
 			sourceTree = "<group>";
@@ -72,10 +151,8 @@
 		A23043CA206AE4F900C8A618 /* Items */ = {
 			isa = PBXGroup;
 			children = (
-				A23043CB206AE52400C8A618 /* ItemsViewController.swift */,
-				A23043CD206AE57F00C8A618 /* ItemsModel.swift */,
-				A23043CF206AE76600C8A618 /* ItemCellController.swift */,
-				A20F8754206B2EDB00F20F2B /* SingleItemViewController.swift */,
+				A217ACB0209227250005023F /* Controller */,
+				A217ACAF209227210005023F /* Model */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -101,6 +178,8 @@
 		A2FB568920698ED2004F0344 /* Utterfare Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				A217ACAA209224250005023F /* Custom Alerts */,
+				A217AC9F209222FD0005023F /* Account Recovery */,
 				A23043CA206AE4F900C8A618 /* Items */,
 				A23043C7206AA7EF00C8A618 /* Log In */,
 				A2FB568A20698ED2004F0344 /* AppDelegate.swift */,
@@ -255,12 +334,17 @@
 			files = (
 				A23043CC206AE52400C8A618 /* ItemsViewController.swift in Sources */,
 				A20F8755206B2EDB00F20F2B /* SingleItemViewController.swift in Sources */,
+				A217ACAC209224340005023F /* CustomAlerts.swift in Sources */,
 				A2FB568B20698ED2004F0344 /* AppDelegate.swift in Sources */,
 				A23043C9206AA80400C8A618 /* LogInModel.swift in Sources */,
+				A217ACA1209223280005023F /* RecoverUsernameController.swift in Sources */,
 				A2FB568D20698ED2004F0344 /* MainViewController.swift in Sources */,
 				A23043D0206AE76600C8A618 /* ItemCellController.swift in Sources */,
 				A23043CE206AE57F00C8A618 /* ItemsModel.swift in Sources */,
 				A23043C6206AA6E200C8A618 /* LogInViewController.swift in Sources */,
+				A217ACA5209223860005023F /* RecoverPasswordController.swift in Sources */,
+				A217ACA7209223980005023F /* PasswordResetCodeController.swift in Sources */,
+				A217ACA9209223F50005023F /* UpdatePasswordController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

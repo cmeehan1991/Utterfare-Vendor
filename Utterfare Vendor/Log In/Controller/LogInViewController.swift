@@ -12,9 +12,12 @@ import UIKit
 class LogInViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     let defaults = UserDefaults.standard
+    
+    @IBAction func forgotUsernamePasswordAction(){
+        
+    }
     
     @IBAction func signInAction(){
         activityIndicator.startAnimating()
